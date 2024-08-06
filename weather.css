@@ -1,0 +1,292 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+    border-radius: 20px;
+}
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 53, 188, 0.708); 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5a5a5a; 
+}
+
+::-webkit-text-size-adjust{
+  text-size-adjust: 0;
+}
+
+
+
+
+
+body {
+  background-size:100%; 
+  /* background: linear-gradient(to bottom, #202020, #111119); */
+  
+}
+
+.weatherVdo{
+  filter: brightness(74%);
+}
+
+
+
+
+.navbar-logo{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(0, 187, 255, 0.747);
+    text-decoration: none;
+    font-size: x-large;
+    padding-left: 20px;
+}
+
+.navbar-nav{
+  margin-left: 1%;
+  text-align: center;
+}
+
+.search{
+  display: flex;
+}
+
+.navbar-nav .nav-item .nav-link{
+    margin-left: 0px; 
+    text-decoration: none;  
+    color: rgb(119, 119, 119);
+    margin-left: 30px; 
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: aliceblue;
+    font-size: 17px;
+}
+
+.navbar-collapse{
+    margin-right:0px
+}
+
+.nav-item #Home{
+  color: greenyellow;
+}
+
+.clock{
+    padding-top: 40px;
+    margin-left: 93%;
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}    
+
+.container{
+    color: rgb(255, 255, 255);
+    margin: 0px;
+
+}
+
+.container-fluid a span{
+    position: absolute;
+  animation: bounce 1s infinite alternate;
+}    
+
+.container-fluid .navbar-toggler{
+    background-color: #ffffff6c;
+    border: none;
+    height: 35px;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+}
+
+.container .mainTxt{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.mainCards .col .card{
+  width: 87%;
+  margin-left: 20px;
+  background-color: #ffffff25;
+  backdrop-filter: blur(10px);
+}
+
+
+.card-body{
+    background-color: #00000017;
+    box-shadow: inset 0 -3em 3em rgba(4, 146, 255, 0.208),
+    0.3em 0.3em 1em rgb(0, 0, 0);
+    border: none;
+    background-color: transparent;
+}
+
+.emergBtn a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.WAlert a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.SummerEss a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.card-body h1{
+  color: #ffffff;
+}
+
+.card-header h4{
+  color: #d3d3d3;
+  font-weight: 300;
+}
+
+.card-body .emergBtn{
+    border:none;
+    box-shadow: inset 0 -3em 3em rgba(955, 0, 0, 0.7);
+    background-color: #ffffff;
+}
+
+.card-body li{
+    font-size: larger;
+    font-weight:600;
+    color: rgb(228, 228, 228);
+}
+
+.navbar{
+    background: linear-gradient(to bottom, #202020, #111119);
+    position: sticky; 
+    top: 0; 
+    width: 100%; 
+    z-index: 100;
+    display: flex; 
+}
+
+.clock{
+    position: fixed;
+    z-index: 100;
+    margin-top: 10px;
+}
+
+
+.clock{
+    border-radius: 20px;
+}
+
+.marq{
+    background-color: transparent;
+    margin-bottom: 30px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: inset 0 -3em 3em rgba(255, 4, 4, 0.208),
+    0 0 0 1px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgb(255, 255, 255);
+    font-family:'Courier New', Courier, monospace;
+    backdrop-filter: blur(2px);
+}
+
+.marqTxt{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+
+.table-responsive{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #ff000017;
+    box-shadow: inset 0 -3em 3em rgb(255, 255, 255),
+    0.3em 0.3em 1em rgb(0, 111, 555);
+}
+
+
+
+.table-responsive.text-start{
+    padding-left: 20px;
+}
+
+.text-start1{
+    color: blue;
+}
+
+@keyframes growshrink {
+    25%,
+    75% {
+      scale: 100%;
+    }
+  
+    50% {
+      scale: 200%;
+      color: rgb(38, 0, 255);
+    }
+  }
+  
+  .container h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  .container h1 span {
+    display: inline-block;
+    animation-duration: 3s;
+    animation-name: growshrink;
+  }
+  
+  @keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+  
+  @keyframes growshrink {
+    25%,
+    75% {
+      scale: 100%;
+    }
+  
+    50% {
+      scale: 200%;
+      color: rgb(0, 255, 17);
+    }
+  }
+  
+
+
+
+
+
+
+
